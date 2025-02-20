@@ -7,7 +7,9 @@ const fs = require('fs');
 const path = require('path');
 const corsOptions = {
   origin:"https://food-delivery-app-i5kf.onrender.com",
-  credentials:true
+  methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
 }
 dotenv.config(corsOptions);
 connectdb();
@@ -16,14 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
-);
+
 
 // Ensure the uploads directory exists
 const uploadsDir = path.join(__dirname, 'uploads');
