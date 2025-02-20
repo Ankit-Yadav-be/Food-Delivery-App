@@ -1,5 +1,5 @@
 const express = require("express");
-const connectdb = require("../server/config/config"); // Ensure this path is correct
+const connectdb = require("./config/config"); // Ensure this path is correct
 const morgan = require("morgan");
 const dotenv = require("dotenv");
 const cors = require("cors");
