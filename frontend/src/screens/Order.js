@@ -53,7 +53,7 @@ const Order = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/payment/getorder",
+        "https://food-delivery-app-i5kf.onrender.com/api/payment/getorder",
         { userid },
         { headers: { "Content-Type": "application/json" } }
       );

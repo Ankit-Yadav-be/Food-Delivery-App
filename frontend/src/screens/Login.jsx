@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:8000/api/user/login", { email, password });
+    const res = await axios.post("https://food-delivery-app-i5kf.onrender.com/api/user/login", { email, password });
     setAuth({ ...auth, user: res.data.user });
     localStorage.setItem("auth", JSON.stringify(res.data));
     navigate("/");

@@ -12,7 +12,7 @@ const Allpizza = () => {
   useEffect(() => {
     const fetchPizzas = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/pizza/getallpizza');
+        const response = await axios.get('https://food-delivery-app-i5kf.onrender.com/api/pizza/getallpizza');
         console.log(response.data.data); // Debug response data
         setPizzas(response.data.data);
         setLoading(false);

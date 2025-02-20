@@ -10,7 +10,7 @@ const AllUsers = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/user/getuser');
+        const response = await axios.get('https://food-delivery-app-i5kf.onrender.com/api/user/getuser');
         setUsers(response.data.data);
         setLoading(false);
       } catch (error) {

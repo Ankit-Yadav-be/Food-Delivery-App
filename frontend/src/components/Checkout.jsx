@@ -21,7 +21,7 @@ const Checkout = ({ totalPrice }) => {
     setPrice(totalPrice);
 
     try {
-      const res = await axios.post('http://localhost:8000/api/payment/order', {
+      const res = await axios.post('https://food-delivery-app-i5kf.onrender.com/api/payment/order', {
         token,
         auth,
         price: totalPrice,

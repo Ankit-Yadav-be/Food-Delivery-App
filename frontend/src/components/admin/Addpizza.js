@@ -60,7 +60,7 @@ const AddPizza = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/pizza/addpizza",
+        "https://food-delivery-app-i5kf.onrender.com/api/pizza/addpizza",
         formData,
         {
           headers: {

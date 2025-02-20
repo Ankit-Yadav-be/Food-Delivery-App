@@ -40,7 +40,7 @@ const Allorder = () => {
 
   const handleDeliver = async (orderid) => {
     try {
-      await axios.post("http://localhost:8000/api/payment/deliver", {
+      await axios.post("https://food-delivery-app-i5kf.onrender.com/api/payment/deliver", {
         orderid,
       });
       setOrders((prevOrders) =>

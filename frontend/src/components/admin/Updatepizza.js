@@ -46,7 +46,7 @@ const Updatepizza = () => {
       setImage(update.image || null);
       setImagePreview(
         update.image
-          ? `http://localhost:8000/${update.image.replace(/\\/g, "/")}`
+          ? `https://food-delivery-app-i5kf.onrender.com/${update.image.replace(/\\/g, "/")}`
           : null
       );
       setCategory(update.category || "");

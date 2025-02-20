@@ -15,7 +15,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const user = { name, email, password, confirmpassword };
-        const res = await axios.post("http://localhost:8000/api/user/register",
+        const res = await axios.post("https://food-delivery-app-i5kf.onrender.com/api/user/register",
             {
                 name, email, password, confirmpassword
             }

@@ -5,8 +5,11 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const fs = require('fs');
 const path = require('path');
-
-dotenv.config();
+const corsOptions = {
+  origin:"https://food-delivery-app-i5kf.onrender.com",
+  credentials:true
+}
+dotenv.config(corsOptions);
 connectdb();
 const _dirname = path.resolve();
 const app = express();
