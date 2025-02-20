@@ -1,0 +1,87 @@
+.cart-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .summary-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .summary-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .img-fluid {
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-fluid:hover {
+    opacity: 0.9;
+  }
+  
+  .btn-danger {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-danger svg {
+    margin-right: 5px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    color: #6c757d;
+  }
+  
+
+  /* Ensure the image is properly set */
+.img-fluid {
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-fluid:hover {
+    opacity: 0.9;
+  }
+  
+  /* Adjust the remove button */
+  .btn-danger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  .btn-danger svg {
+    margin-right: 5px;
+  }
+  

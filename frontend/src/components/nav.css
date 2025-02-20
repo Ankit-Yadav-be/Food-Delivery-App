@@ -1,0 +1,32 @@
+/* NavbarComponent.css */
+
+/* Styling for the Navbar */
+.topbar {
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #e5e5e5; /* Light gray border bottom */
+    padding: 10px 0; /* Padding for the Navbar */
+}
+
+/* Styling for Navbar links */
+.topbar .nav-link {
+    color: #333333; /* Dark gray text color */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    margin-right: 15px; /* Spacing between Navbar links */
+}
+
+/* Styling for Navbar icons */
+.nav-icon {
+    margin-right: 5px; /* Spacing between icon and text */
+}
+
+/* Hover effect for Navbar links */
+.topbar .nav-link:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Active link styling (optional) */
+.topbar .nav-link.active {
+    color: #007bff; /* Blue color for active link */
+    font-weight: bold; /* Bold font weight for active link */
+}
