@@ -31,7 +31,7 @@ const Allpizza = () => {
   }
 
   const gofordelete =async (pizza)=>{
-    const res=   await axios.delete(`http://localhost:8000/api/pizza/deletepizza/${pizza._id}`);
+    const res=   await axios.delete(`https://food-delivery-app-i5kf.onrender.com/api/pizza/deletepizza/${pizza._id}`);
     if(res)
     {
       console.log("pizza deleted");
@@ -68,7 +68,7 @@ const Allpizza = () => {
           <Tbody>
             {pizzas.map((pizza) => {
               // Ensure the image URL is correctly formatted
-              const imageUrl = `http://localhost:8000/${pizza.image.replace(/\\/g, '/')}`;
+              const imageUrl = pizza.image;
               console.log(imageUrl); // Debug image URL
               return (
                 <Tr key={pizza._id}>

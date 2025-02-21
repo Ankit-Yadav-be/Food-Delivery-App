@@ -46,7 +46,7 @@ const Updatepizza = () => {
       setImage(update.image || null);
       setImagePreview(
         update.image
-          ? `https://food-delivery-app-i5kf.onrender.com/${update.image.replace(/\\/g, "/")}`
+          ? update.image
           : null
       );
       setCategory(update.category || "");
@@ -96,7 +96,7 @@ const Updatepizza = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/pizza/updatepizza/${id}`,
+        `https://food-delivery-app-i5kf.onrender.com/api/pizza/updatepizza/${id}`,
         formData,
         {
           headers: {
