@@ -1,6 +1,6 @@
-import express from "express";
-import upload from "../middleware/uploads.js"; // ✅ Import Multer with Cloudinary Storage
-import pizzaModel from "../models/pizzaModel.js";
+const express = require("express");
+const upload = require("../middleware/uploads.js"); // ✅ Import Multer with Cloudinary Storage
+const pizzaModel = require("../models/pizzaModel.js");
 
 const router = express.Router();
 
@@ -107,4 +107,4 @@ router.post("/search", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router; // ✅ Export using CommonJS
