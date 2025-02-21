@@ -187,7 +187,7 @@ const Order = () => {
                       <Td>
                         <Image
                           boxSize="50px"
-                          src={`http://localhost:8000/${item.image.replace(/\\/g, '/')}`}
+                          src={item.image}
                           alt={item.name}
                           borderRadius="md"
                         />

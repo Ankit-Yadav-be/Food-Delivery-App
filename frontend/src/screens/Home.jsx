@@ -141,7 +141,7 @@ const Home = () => {
                 <Text color="gray.500">{pizza.category}</Text>
               </CardHeader>
               <Image
-                src={`http://localhost:8000/${pizza.image.replace(/\\/g, "/")}`}
+                src={pizza.image}
                 alt={pizza.name}
                 objectFit="cover"
                 height="10em"

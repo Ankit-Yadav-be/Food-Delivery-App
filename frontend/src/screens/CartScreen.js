@@ -77,7 +77,7 @@ const CartScreen = () => {
                 <Tr key={index}>
                   <Td>
                     <Image
-                      src={`http://localhost:8000/${item.image.replace(/\\/g, '/')}`}
+                      src={item.image}
                       alt={item.name}
                       boxSize="100px"
                       objectFit="cover"
